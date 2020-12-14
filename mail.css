@@ -1,0 +1,1262 @@
+@font-face {
+  font-family: 'alegreya';
+  src: url('./Fonts1/alegreyasanssc-black-webfont.woff2') format('woff2'),
+    url('./Fonts1/alegreyasanssc-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font: 16px / 1.42 "Roboto", Arial, sans-serif;
+  color: #212121;
+  -webkit-font-smoothing: antialiased;
+  background: #fcf5e6;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1300px;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-width: 1500px;
+}
+
+.wrapper1 {
+  overflow: hidden;
+  min-width: 1300px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul>li {
+  list-style: none;
+}
+
+.hero {
+  height: 100vh;
+  min-height: 800px;
+  background: url(./images/web-ready/bg/hero.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 130px;
+}
+
+.header {
+  padding-top: 27px;
+  max-width: 1290px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mail {
+  text-decoration: none;
+  text-align: center;
+  font-family: "Roboto", Arial, sans-serif;
+  color: inherit;
+}
+
+.mail__title {
+  margin-bottom: 3px;
+}
+
+.mail__content {
+  background: #212121;
+  padding: 5px 10px;
+  color: #ffbc2f;
+}
+
+.hero__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1140px;
+  height: 72%;
+}
+
+.sidebar__menu {
+  position: absolute;
+  left: -400px;
+  transition: left .5s;
+}
+
+.sidebar__hamburger-icon {
+  width: 29px;
+  height: 29px;
+  fill: #ffbc2f;
+}
+
+.sidebar__hamburger {
+  display: block;
+  position: absolute;
+  top: 27px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.sidebar--opened .sidebar__hamburger {
+  display: none;
+}
+
+.sidebar--opened .sidebar__menu {
+  left: 0;
+  width: 100%;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 75px;
+  background: #212121;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: width .3s;
+}
+
+.sidebar__header {
+  position: absolute;
+  top: 29px;
+  display: none;
+  justify-content: center;
+}
+
+.sidebar__close-icon {
+  width: 29px;
+  height: 29px;
+  fill: #ffbc2f;
+}
+
+.sidebar__close {
+  position: absolute;
+  top: -4px;
+  right: -62px;
+}
+
+.side-menu__link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffbc2f;
+  text-transform: uppercase;
+  font-family: "Yanone Kaffeesatz", arial, sans-serif;
+  font-weight: 300;
+
+}
+
+.side-menu__item {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.side-menu__link:hover {
+  color: red;
+}
+
+.sidebar--opened {
+  width: 322px;
+}
+
+.sidebar--opened .sidebar__header {
+  display: flex;
+}
+
+.fade-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.fade-slider__item {
+  background: center center / contain no-repeat;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.fade-slider__item--visible {
+  opacity: 1;
+}
+
+.fade-slider__item--style-thirts {
+  background-image: url(./images/web-ready/content/hero/slider_pic_1.png);
+}
+
+.fade-slider__item--style-games {
+  background-image: url(./images/web-ready/content/hero/slider_pic_2.png);
+}
+
+.fade-slider__item--style-presents {
+  background-image: url(./images/web-ready/content/hero/slider_pic_3.png);
+}
+
+.fade-slider__text {
+  position: absolute;
+  left: 0%;
+  top: 25.4%;
+  transform: rotate(0.5deg)
+}
+
+.fade-slider__text--games {
+  position: absolute;
+  left: 0%;
+  top: 25.4%;
+}
+
+.fade-slider__text--presents {
+  position: absolute;
+  left: 0%;
+  top: 25.4%;
+  transform: rotate(1deg)
+}
+
+.lined-text {
+  font-family: "Alegreya", Arial, sans-serif;
+  color: white;
+  font-size: 63px;
+  text-transform: uppercase;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.lined-test__word {
+  font-family: 'Alegreya';
+}
+
+.lined-text__word {
+  background: #212121;
+  margin-top: -7px;
+}
+
+.lined-text__word--games {
+  background: #212121;
+  margin-top: -7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 195px;
+  justify-content: flex-end;
+}
+
+.lined-text__word--presents {
+  background: #212121;
+  margin-top: -7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 195px;
+  justify-content: flex-end;
+  margin-left: -25px;
+}
+
+.lined-text__word--color-yellow {
+  color: #ffbc2f;
+}
+
+.lined-text__word--presents-up {
+  font-size: 80px;
+}
+
+.lined-text__word--color-yellow--presents {
+  color: #ffbc2f;
+  font-size: 58px;
+  padding-bottom: 8px;
+}
+
+.lined-text__word:nth-child(1) {
+  padding: 4px 20px 5px 22px;
+  margin-left: 8px;
+}
+
+.lined-text__word:nth-child(2) {
+  padding: 4px 12px 5px 10px;
+  margin-left: 20px;
+}
+
+.lined-text__word:nth-child(3) {
+  padding: 4px 18px 5px 19px;
+  margin-left: 8px;
+}
+
+.lined-text__word:nth-child(4) {
+  padding: 4px 25px 5px 22px;
+  margin-left: 15px;
+}
+
+.lined-text--games {
+  font-family: "Alegreya", Arial, sans-serif;
+  color: white;
+  font-size: 63px;
+  text-transform: uppercase;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 380px;
+}
+
+.lined-text--presents {
+  font-family: "Alegreya", Arial, sans-serif;
+  color: white;
+  font-size: 63px;
+  text-transform: uppercase;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 290px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.filter__item {
+  margin-right: 40px;
+}
+
+.filter__item:last-child {
+  margin-right: 0;
+}
+
+.filter__link {
+  text-transform: uppercase;
+  padding: 3px 21px;
+  color: #1b1b1b;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Yanone Kaffeesatz", arial, sans-serif;
+}
+
+.filter__link:hover {
+  color: #d82727;
+}
+
+.filter__item--active .filter__link {
+  color: #ffbc2f;
+  background: #000;
+}
+
+.products__item {
+  width: 301px;
+  height: 386px;
+  background: #ffbc2f;
+  margin-bottom: 35px;
+  margin-left: 28px;
+  position: relative;
+}
+
+.products__item:hover .products__desc {
+  transform: translateY(0);
+}
+
+.products__price {
+  position: absolute;
+  top: 18px;
+  left: -10px;
+  width: 126px;
+  border-bottom: 45px solid #232323;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  transform: rotate(-181deg);
+}
+
+.products__price-amount {
+  transform: rotate(181deg);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Yanone Kaffeesatz", arial, sans-serif;
+  color: white;
+  position: absolute;
+  top: 2px;
+  right: 28px;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -27px;
+}
+
+.products__content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.products__desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 23px 30px;
+  background: rgba(35, 35, 35, 80%);
+  font-size: 15px;
+  /*display: flex;
+  font-display: column;
+  align-items: center;*/
+  text-align: center;
+  color: white;
+  transform: translateY(100%);
+  transition: transform .3s;
+}
+
+.products_desc-text {
+  margin-bottom: 20px;
+}
+
+.products__img {
+  display: block;
+  max-width: 90%;
+  max-height: 100%;
+}
+
+.btn {
+  color: #ffbc2f;
+  background: #000;
+  text-transform: uppercase;
+  font-family: "Yanone Kaffeesatz", arial, sans-serif;
+  font-size: 24px;
+  padding: 2px 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: red;
+}
+
+.products__item--color-black {
+  background-color: #232323;
+}
+
+.products__item--size-double {
+  height: 544px;
+  width: 630px;
+}
+
+.products__item--color-black .products__price {
+  border-bottom-color: #ffbc2f;
+}
+
+.products__item--color-black .products__price-amount {
+  color: #212121;
+}
+
+.collections__list {
+  display: flex;
+}
+
+.collections__item {
+  min-height: 474px;
+  flex: 1;
+  overflow: hidden;
+  margin-right: 30px;
+  background: url(./images/web-ready/bg/pattern.png) center center / 500px;
+  position: relative;
+}
+
+.collections__item:last-child {
+  margin-right: 0;
+}
+
+.collections__link {
+  display: block;
+  padding: 74px 13% 74px 44%;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.collections__link:hover .btn {
+  background: red;
+  color: white;
+}
+
+.collections__title {
+  font-family: "Yanone Kaffeesatz", arial, sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+.collections__desc {
+  margin-bottom: 28px;
+}
+
+.collections__item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 176%;
+  width: 60%;
+  top: -17%;
+  left: -18%;
+  background: center center / contain no-repeat;
+}
+
+.collections__item--type-guys:before {
+  background-image: url('./images/web-ready/collections/collection_man.png');
+}
+
+.collections__item--type-girls:before {
+  background-image: url('./images/web-ready/collections/collection_woman.png');
+  top: -31%;
+  width: 80%;
+  left: -25%;
+}
+
+.products {
+  margin-bottom: 160px;
+}
+
+.collections {
+  margin-bottom: 135px;
+}
+
+.footer {
+  margin-bottom: 115px;
+}
+
+.site-menu__sections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-menu__col {
+  margin-right: 20px;
+}
+
+.site-menu__col:last-child {
+  margin-right: 0;
+}
+
+.site-menu__title {
+  font-family: "Yanone Kaffeesatz", arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.site-menu__item {
+  margin-bottom: 15px;
+  color: #1b1b1b;
+}
+
+.site-menu__link {
+  color: #737373;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.site-menu__link:hover {
+  color: red;
+}
+
+.site-menu__link--adress {
+  margin-bottom: 36px;
+  color: #1b1b1b;
+}
+
+.site-menu__link--tel {
+  color: #1b1b1b;
+}
+
+.site-menu__item--tel {
+  margin-bottom: 10px;
+}
+
+.site-menu__link--tel:hover {
+  color: red;
+}
+
+.site-menu__link--email:hover {
+  color: red;
+}
+
+.site-menu__text {
+  color: #1b1b1b;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer__container {
+  width: 1105px;
+}
+
+.extras {
+  display: flex;
+  margin-bottom: 95px;
+}
+
+.extras__best {
+  display: block;
+  background: #232323;
+  font-family: "Yanone Kaffeesatz", arial, sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  padding: 53px 10%;
+}
+
+.extras__col {
+  margin-right: 20px;
+  flex: 1;
+}
+
+.extras__col:last-child {
+  margin-right: 0px;
+}
+
+.extras__col-socials {
+  background: url(./images/web-ready/bg/pattern.png) center center / 500px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 50px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+.socials__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.socials__link:hover .socials__icon {
+  fill: red;
+}
+
+.site-menu {
+  margin-bottom: 115px;
+}
+
+.header__product {
+  overflow: hidden;
+  height: 155px;
+  background: url(./images/web-ready/bg/hero.jpg) center center / cover no-repeat;
+  background-size: 100% 100vh;
+  margin: 0px 0px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__productimage {
+  display: flex;
+  margin-top: 30px;
+  padding: 0 100px;
+}
+
+.mail__product {
+  margin-top: -18px;
+  margin-right: 80px;
+}
+
+.lost-shirt-logo {
+  margin-top: -14px;
+  margin-left: 85px;
+}
+
+.lined-text-product {
+  display: flex;
+  position: absolute;
+  font-size: 30px;
+}
+
+.lined-text-product {
+  margin-top: 62px;
+  margin-right: -145px;
+  transform: rotate(0.5deg)
+}
+
+.lined-text__word1 {
+  background: #212121;
+  margin-top: -7px;
+}
+
+.lined-text__word1:nth-child(1) {
+  padding: 2px 10px 3px 11px;
+  margin-left: 14px;
+}
+
+.lined-text__word1:nth-child(2) {
+  padding: 2px 6px 3px 6px;
+  margin-left: 20px;
+}
+
+.lined-text__word1:nth-child(3) {
+  padding: 2px 9px 3px 10px;
+  margin-left: 15px;
+}
+
+.lined-text__word1:nth-child(4) {
+  padding: 2px 10px 3px 8px;
+  margin-left: 18px;
+}
+
+.emmet {
+  display: flex;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.borderbox {
+  display: block;
+  width: 554px;
+  height: 668px;
+  background: transparent;
+  border-left: 536px solid #ffc92f;
+  border-top: 10px solid #ffc92f;
+  border-bottom: 10px solid #ffc92f;
+  border-right: 10px solid #ffc92f;
+  position: relative;
+}
+
+.container1 {
+  margin: 90px auto;
+  width: 1100px;
+}
+
+.t-shirts {
+  position: absolute;
+  z-index: 1;
+  display: inline-flex;
+  margin: 114px 30px;
+}
+
+.t-shirts-img {
+  width: 494px;
+  height: 464px;
+  display: none;
+  position: absolute;
+}
+
+.t-shirts-img--active {
+  display: flex;
+}
+
+.border__header {
+  display: flex;
+  flex-direction: column;
+  width: 554px;
+  height: 175px;
+}
+
+.border__header {
+  line-height: 1.2;
+  padding-left: 28px;
+  padding-top: 22px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e0d9c8;
+}
+
+.border__text-price {
+  width: 94px;
+  height: 46px;
+  background: #ffc92f;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yanone Kaffeesatz", arial, sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  text-decoration: none;
+  color: #212121;
+}
+
+.border__text-title .hurley {
+  color: #ffc92f;
+  font-size: 17px;
+  font-family: "Ubuntu", arial, sans-serif;
+  font-weight: 600;
+}
+
+.border__text-title .rick {
+  color: #212121;
+  font-family: "Yanone Kaffeesatz", arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 47px;
+}
+
+.border__text-info {
+  width: 526px;
+  height: 231px;
+  font-size: 13px;
+  font-family: "Roboto", arial, sans-serif;
+  line-height: 2.65;
+  color: #1b1b1b;
+  padding-left: 28px;
+  padding-top: 23px;
+  border-bottom: 1px solid #e0d9c8;
+}
+
+.border__sizes {
+  padding-left: 28px;
+  padding-top: 28px;
+}
+
+.sizebtn {
+  display: inline-flex;
+  margin-right: 6px;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #e0d9c8;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+}
+
+.sizebtn__order {
+  color: #212121;
+}
+
+.sizebtn__order:hover {
+  background: #ffc92f;
+  border-color: #ffc92f;
+}
+
+.sizebtn__ooo {
+  color: #e0d9c8;
+}
+
+.border__buy-btn {
+  color: #ffbc2f;
+  background: #000;
+  text-transform: uppercase;
+  font-family: "Yanone Kaffeesatz", arial, sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  padding: 2px 30px;
+  display: inline-flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  height: 51px;
+  width: 150px;
+  margin-left: 28px;
+  margin-top: 26px;
+}
+
+.decription {
+  margin-bottom: -37px;
+}
+
+.border__buy-btn:hover {
+  background: #d82727;
+  color: #fff;
+}
+
+.wash {
+  width: 1081px;
+  height: 277px;
+  border: 10px solid #ffbc2f;
+}
+
+.wash__left {
+  width: 338px;
+  height: 277px;
+  border-right: 1px solid #e0d9c8;
+  display: flex;
+}
+
+.wash__left__text {
+  line-height: 3;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 13px;
+  margin-top: 34px;
+}
+
+
+.save {
+  height: 25px;
+  width: 25px;
+  margin-bottom: 10.5px;
+}
+
+.wash__left__img {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+  margin-left: 34px;
+  margin-top: 40px;
+}
+
+.third__child {
+  line-height: 1;
+}
+
+.wash__left__text__child--none {
+  line-height: 1;
+margin-bottom: 8px;
+}
+
+.wash__left__text__child--2 {
+  margin-bottom: 12px;
+}
+
+.wash__left__text__child--last {
+  margin-top: 2px;
+}
+
+.wash {
+  display: none;
+}
+
+.wash__right-text {
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 13px;
+  margin-top: 44px;
+  margin-left: 48px;
+  line-height: 1.7;
+}
+
+.size {
+  display: none;
+  width: 1081px;
+  height: 435px;
+  border: 10px solid #ffbc2f;
+}
+
+.size__left-img {
+  display: flex;
+  align-items: start;
+  height: 203px;
+  width: 224px;
+  margin-left: 46px;
+  margin-top: 30px;
+  margin-bottom: 49px;
+}
+
+.size__left {
+  width: 338px;
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery {
+  width: 1081px;
+  height: 241px;
+  border: 10px solid #ffbc2f;
+  display: none;
+}
+
+.delivery__left-img {
+  height: 241px;
+  width: 271px;
+  display: flex;
+  margin-left: 67px;
+  align-items: center;
+  border-right: 1px solid #e0d9c8;
+}
+
+.delivery__right-text {
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 14px;
+}
+
+.delivery__right-texts {
+ margin-bottom: 10px;
+}
+
+.delivery__right {
+  margin-left: 46px;
+  margin-top: 46px;
+}
+
+.about-brand {
+  width: 1081px;
+  height: 241px;
+  border: 10px solid #ffbc2f;
+  display: none;
+}
+
+.brand__left-img {
+  height: 241px;
+  width: 338px;
+  display: flex;
+  align-items: start;
+  border-right: 1px solid #e0d9c8;
+  justify-content: center;
+}
+
+.brand__left-img-file {
+  display: block;
+  width: 225px;
+  margin-top: 68px;
+}
+
+.brand__right-text {
+  font-family: "Roboto", arial, sans-serif;
+  margin-left: 46px;
+  font-size: 14px;
+  margin-top: 48px;
+}
+
+.size__left-desc {
+  display: flex;
+}
+
+.size__left-img-file {
+  width: 257px;
+  height: 230px;
+}
+
+.size__left-desc {
+  margin-left: 50px;
+}
+
+.size__left-desc-num {
+  margin-bottom: 20px;
+  margin-right: 14px;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 12px;
+}
+
+.size__left-desc-text {
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 12px;
+}
+
+.size__left-desc-texts {
+  margin-bottom: 16px;
+}
+
+.size__left-desc-nums {
+  margin-bottom: 33px;
+}
+
+.size__right {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 1px;
+}
+
+.spisok__numbers {
+  display: flex;
+justify-content: center;
+width: 72px;
+height: 44px;
+border: 1px solid #e0d9c8;
+align-items: center;
+font-size: 12px;
+font-family: "Roboto", arial, sans-serif;
+}
+
+.spisok__sizes {
+display: flex;
+justify-content: center;
+  width: 72px;
+  height: 58.5px;
+  border: 1px solid #e0d9c8;
+  align-items: center;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  background: #f6efe0;
+}
+
+.spisok__2 {
+  margin-left: -1px;
+}
+.spisok__3 {
+  margin-left: -1px;
+}
+.spisok__4 {
+  margin-left: -1px;
+}
+.spisok__5 {
+  margin-left: -1px;
+}
+.spisok__6 {
+  margin-left: -1px;
+}
+.spisok__7 {
+  margin-left: -1px;
+}
+.spisok__8 {
+  margin-left: -1px;
+}
+.spisok__9 {
+  margin-left: -1px;
+}
+
+.spisok__sizes-up {
+  margin-top: -1px;
+}
+
+.spisok__numbers-up {
+  margin-top: -1px;
+}
+
+.spisok__numbers-text {
+  width: 139px;
+  align-items: center;
+  justify-content: start;
+  padding-left: 18px;
+}
+
+.description__block--active {
+  display: flex;
+}
+
+.sizebtn--active {
+  border-color: #ffc92f;
+  background: #ffc92f;
+}
+
+.black {
+  align-items: center;
+  width: 24px; 
+  height: 24px;
+  background: #212121;
+  border-radius: 50%;
+}
+.white {
+  width: 20px; 
+  height: 20px;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #e0d9c8;
+
+}
+.green {
+  width: 24px; 
+  height: 24px;
+  background: #529029;
+  border-radius: 50%;
+}
+.blue {
+  width: 24px; 
+  height: 24px;
+  background: #39498d;
+  border-radius: 50%;
+}
+.red {
+  width: 24px; 
+  height: 24px;
+  background: #d82727;
+  border-radius: 50%;
+}
+
+.border__colors-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 19px;
+}
+
+.border__colors {
+  display: flex;
+  margin-left: 29px;
+  margin-top: 28px;
+}
+
+.footer_footer {
+  display: flex;
+  flex-direction: column;
+}
+.black:hover {
+  border: 3px solid #ffc92f;
+  border-radius: 50%;
+  box-sizing:inherit;
+}
+.white:hover {
+  border: 3px solid #ffc92f;
+  border-radius: 50%;
+  box-sizing:inherit;
+}
+.green:hover {
+  border: 3px solid #ffc92f;
+  border-radius: 50%;
+  box-sizing:inherit;
+}
+
+.blue:hover {
+  border: 3px solid #ffc92f;
+  border-radius: 50%;
+  box-sizing:inherit;
+}
+.red:hover {
+  border: 3px solid #ffc92f;
+  border-radius: 50%;
+  box-sizing:unset;
+}
+
+.border__colors-circle-active {
+  border: 3px solid #ffc92f;
+  border-radius: 50%;
+}
+
+.color__circles {
+  box-sizing: content-box;
+}
